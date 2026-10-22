@@ -1,0 +1,18 @@
+{%extends 'layout/base.html'%}
+
+{%block content%}
+<h1 class="text-center text-success mt-2">DANG KY NGUOI DUNG</h1>
+<form method="post" action="/register">
+    <div class="form-floating mb-3 mt-3">
+        <input type="text" class="form-control" id="username" placeholder="Ten dang ky" name="username">
+        <label for="username">Ten dang ky</label>
+        <div class="form-floating mb-3 mt-3">
+            <input type="password" class="form-control" id="password" placeholder="Tao mat khau" name="password">
+            <label for="password">Tao mat khau</label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <button class="btn btn-success">Dang ky</button>
+        </div>
+    </div>
+</form>
+{%endblock%}
