@@ -3,6 +3,8 @@
 {%block content%}
 
 {%if products%}
+
+
 <div class="row">
     {%for p in products%}
     <div class="col-md-3 col-6 p-2">
@@ -19,6 +21,12 @@
     </div>
     {%endfor%}
 </div>
+
+<ul class="pagination" >
+ {%for i in range(1, page+1)%}
+  <li class="page-item"><a class="page-link" href="/?page={{i}}">{{i}}</a></li>
+ {%endfor%}
+</ul>
 {%else%}
 <div class="alert alert-warning mt-2">KHONG tim thay san pham!</div>
 {%endif%}
